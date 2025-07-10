@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Recommendation App</title>
+  <link rel="stylesheet" href="../src/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Recommendation</h1>
+
+    <label for="genre">Select Genre:</label>
+    <select id="genre">
+      <option value="action">Action</option>
+      <option value="comedy">Comedy</option>
+      <option value="drama">Drama</option>
+    </select>
+    <h2>Or Search by Movie Title:</h2>
+    <input type="text" id="search-input" placeholder="Type a movie name..." />
+    <button onclick="searchMovies()">Search</button>
+    
+    <button onclick="getRecommendations()">Get Recommendations</button>
+
+    <div id="recommendations"></div>
+    <h2>Your Saved Movies</h2>
+    <div id="saved-movies"></div>
+
+  </div>
+
+  <!-- Firebase and JS scripts -->
+<!-- Firebase v8-compatible SDKs -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<!-- Your Firebase config -->
+<script src="../src/js/firebase-config.js"></script>
+
+<!-- Your app logic -->
+<script src="../src/js/app.js"></script>
+
+</body>
+</html>

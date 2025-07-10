@@ -1,0 +1,96 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #dfe9f3, #ffffff); /* Soft gradient */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Main container box */
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    text-align: center;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    color: #333;
+  }
+  
+  /* Select and input box styling */
+  select,
+  input[type="text"] {
+    padding: 10px;
+    width: 90%;
+    max-width: 300px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF; /* nice blue */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Container for movie results */
+  #recommendations,
+  #saved-movies {
+    margin-top: 20px;
+  }
+  
+  /* Individual movie box */
+  .movie {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Hover effect on movie cards */
+  .movie:hover {
+    transform: scale(1.02);
+    background-color: #f1f8ff;
+  }
+  
+  /* Movie poster if any */
+  .movie img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    select,
+    input[type="text"] {
+      width: 100%;
+    }
+  }
+  

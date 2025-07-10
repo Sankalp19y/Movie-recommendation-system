@@ -1,0 +1,10 @@
+# Ignore node modules and system files
+node_modules
+.env
+.DS_Store
+firebase-debug.log
+
+# OS / Editor specific
+*.log
+*.tmp
+.vscod
